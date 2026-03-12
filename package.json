@@ -1,0 +1,16 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "个人品牌展示网站",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "preview": "npx serve ."
+  },
+  "keywords": ["portfolio", "personal-website"],
+  "author": "你的姓名",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

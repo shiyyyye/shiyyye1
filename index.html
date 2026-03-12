@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人品牌展示网站 - 展示我的作品、技能和职业经历">
+    <meta name="keywords" content="个人网站,作品集,前端开发,全栈开发">
+    <meta name="author" content="你的姓名">
+    <title>曹家硕 | 个人品牌门户</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="about-detail.html">曹家硕</a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">首页</a></li>
+                <li><a href="#portfolio" class="nav-link">作品</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle" aria-label="切换主题">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">你好，我是</p>
+                <h1 class="hero-name"><a href="about-detail.html" class="hero-name-link">曹家硕</a></h1>
+                <p class="hero-title">全栈开发 · 设计爱好者 · AI产品经理</p>
+                <p class="hero-description">
+                    专注于创建优雅、高效的数字产品。热衷于将创意与技术相结合，为用户带来出色的体验。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i> 查看作品
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> 联系我
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <img src="报名照片.jpg" alt="头像" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#portfolio">
+                <span>向下滚动</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">精选项目</h2>
+                <p class="section-subtitle">我最近完成的一些作品</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" onclick="window.location.href='project-detail.html'">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop" alt="项目1">
+                        <div class="card-overlay">
+                            <a href="project-detail.html" class="card-link" aria-label="查看项目">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="card-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">同城电商商城系统</h3>
+                        <p class="card-description">打造集商品展示、库存管理、同城配送等于一体的电商平台</p>
+                        <div class="card-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">MyBatis</span>
+                            <span class="tag">Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" onclick="window.location.href='project-dashboard.html'">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop" alt="项目2">
+                        <div class="card-overlay">
+                            <a href="project-dashboard.html" class="card-link" aria-label="查看项目">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="card-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">人口数据库管理系统</h3>
+                        <p class="card-description">用于统一管理人口基础信息、户籍与居住状态</p>
+                        <div class="card-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Springboot</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" onclick="window.location.href='project-fitness.html'">
+                    <div class="card-image">
+                        <img src="屏幕截图 2024-07-28 205537.png" alt="项目3">
+                        <div class="card-overlay">
+                            <a href="project-fitness.html" class="card-link" aria-label="查看项目">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="card-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">爱我还是曼波</h3>
+                        <p class="card-description">用ai音乐制作的热点视频</p>
+                        <div class="card-tags">
+                            <span class="tag">bilibili</span>     
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card" onclick="window.location.href='project-aiwriter.html'">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&h=450&fit=crop" alt="项目4">
+                        <div class="card-overlay">
+                            <a href="project-aiwriter.html" class="card-link" aria-label="查看项目">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="card-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">AI 内容生成店铺</h3>
+                        <p class="card-description">线上店铺运营，帮助进行AI代出图，产品设计</p>
+                        <div class="card-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Stablediffusion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">了解更多关于我的故事</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>你好！很高兴认识你 👋</h3>
+                    <p>
+                        我熟悉掌握Java、C++语言，熟悉 HTML5、CSS3、JavaScript，可独立开发响应式页面；
+                        精通Vue全家桶（Vue2/3、Vuex、Router），掌握axios、Ajax的前后端交互；熟悉ECharts、Element UI，有物联网大屏可视化开发经验
+                    </p>
+                    <p>
+                        熟悉Linux/Ubuntu常用命令与环境配置；具备将代码交叉编译并部署至开发板的经验，能够进行驱动配置与调试。
+                        熟悉TCP/IP、OSI七层模型 及常见协议；掌握FTP、DHCP、Windows AD域配置；熟悉Kali Linux渗透测试工具（Wireshark、Nmap、Burp Suite、Hydra），能进行流量分析、漏洞扫描与渗透测试。熟悉mysql数据库
+                    </p>
+                    <p>
+                        除此之外掌握ps，ai，剪映，figma等图像视频处理软件，有独自设计接单经验，
+                        有自媒体经验有摄影能力，策划舞台，后勤经验学习能力强，可快速吸收知识，适应岗位
+                    </p>
+                    <div class="about-buttons">
+                        <a href="about-detail.html#resume" class="btn btn-primary">
+                            <i class="fas fa-download"></i> 下载简历
+                        </a>
+                        <a href="about-detail.html" class="btn btn-secondary">
+                            <i class="fas fa-user"></i> 详细介绍
+                        </a>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>技能栈</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-tooltip="JavaScript">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="TypeScript">
+                            <i class="devicon-typescript-plain colored"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="React">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Vue.js">
+                            <i class="devicon-vuejs-plain colored"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Node.js">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Python">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Docker">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Git">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="AWS">
+                            <i class="devicon-amazonwebservices-original colored"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Figma">
+                            <i class="devicon-figma-plain colored"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="PostgreSQL">
+                            <i class="devicon-postgresql-plain colored"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="MongoDB">
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我</h2>
+                <p class="section-subtitle">有项目想要合作？让我们聊聊吧！</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>邮箱</h4>
+                            <a href="mailto:hello@example.com">2572048330@qq.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>位置</h4>
+                            <p>中国 · 山西</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>社交媒体</h4>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-dribbble"></i>
+                                <span>Dribbble</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required placeholder="你的姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="告诉我你想要什么..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> 发送消息
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; <span id="currentYear"></span> 曹家硕. 保留所有权利.</p>
+                    <p class="footer-built">Built with <i class="fas fa-heart"></i> and lots of ☕</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-updated">最后更新: <span id="lastUpdated"></span></p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
